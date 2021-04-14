@@ -17,3 +17,26 @@ body {
   margin: 0;
 }
 /* End: Global Styles */
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  height: 660px;
+  width: 340px;
+}
+
+.phone .content {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: calc(100% - 60px);
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
